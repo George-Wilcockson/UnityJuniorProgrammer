@@ -15,6 +15,7 @@ public class GameManagerX : MonoBehaviour
     public List<GameObject> targetPrefabs;
 
     private int score;
+    private float timeLeft = 20.0f;
     private float spawnRate = 1.0f;
     public bool isGameActive;
 
@@ -31,6 +32,8 @@ public class GameManagerX : MonoBehaviour
         score = 0;
         UpdateScore(0);
         titleScreen.SetActive(false);
+        Timer();
+
     }
 
     // While game is active spawn a random target
@@ -40,6 +43,16 @@ public class GameManagerX : MonoBehaviour
         {
             yield return new WaitForSeconds(spawnRate);
             int index = Random.Range(0, targetPrefabs.Count);
+
+            if (timeLeft > 0)
+            {
+                timeLeft -= Time.deltaTime;
+            }
+            else
+            {
+                Debug.Log("Time RAN OUT");
+                GameOver();
+            }
 
             if (isGameActive)
             {
@@ -86,5 +99,4 @@ public class GameManagerX : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
 }
