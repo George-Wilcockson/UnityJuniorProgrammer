@@ -32,6 +32,7 @@ public class GameManagerX : MonoBehaviour
         score = 0;
         UpdateScore(0);
         titleScreen.SetActive(false);
+        Timer();
 
     }
 
@@ -40,19 +41,9 @@ public class GameManagerX : MonoBehaviour
     {
         while (isGameActive)
         {
+
             yield return new WaitForSeconds(spawnRate);
             int index = Random.Range(0, targetPrefabs.Count);
-
-            if (timeLeft > 0)
-            {
-                timeLeft -= Time.deltaTime;
-                Debug.Log("I still got time" + timeLeft);
-            }
-            else
-            {
-                Debug.Log("Time RAN OUT");
-                GameOver();
-            }
 
             if (isGameActive)
             {
@@ -72,6 +63,29 @@ public class GameManagerX : MonoBehaviour
         return spawnPosition;
 
     }
+
+
+    IEnumerator Timer()
+    {
+        while(isGameActive)
+        {
+        yield return new WaitForSeconds(1);
+        if (timeLeft > 0)
+        {
+            timeLeft -= 1;
+            Debug.Log("I still got time" + timeLeft);
+        }
+        else
+        {
+            Debug.Log("Time RAN OUT");
+            GameOver();
+        }
+        }
+    }
+
+
+
+
 
     // Generates random square index from 0 to 3, which determines which square the target will appear in
     int RandomSquareIndex()
@@ -98,5 +112,10 @@ public class GameManagerX : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+    }  
+
+
+
+
 }
+
