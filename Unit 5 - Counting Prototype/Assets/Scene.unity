@@ -1883,8 +1883,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1376639078}
   m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: 3.164, y: -4.206, z: -4.806}
-  m_LocalScale: {x: 1, y: 1, z: 3}
+  m_LocalPosition: {x: 3.164, y: -4.206, z: -3.96}
+  m_LocalScale: {x: 1, y: 1, z: 4.68358}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1768829007}
@@ -2012,7 +2012,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: -45
-    max: 1.37
+    max: 45
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
