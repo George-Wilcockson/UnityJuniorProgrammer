@@ -250,8 +250,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9596259}
   m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: 3.102, y: -4.088, z: 2.08}
-  m_LocalScale: {x: 1, y: 1, z: 3}
+  m_LocalPosition: {x: 3.17, y: -4.15, z: 1.41}
+  m_LocalScale: {x: 1, y: 1, z: 4.6008}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1768829007}
@@ -1202,8 +1202,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.81228304, z: 1}
+  m_Center: {x: 0, y: -0.09385848, z: 0}
 --- !u!23 &669560583
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1396,8 +1396,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.8139162, z: 1}
+  m_Center: {x: 0, y: -0.0930419, z: 0}
 --- !u!23 &817807906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1493,8 +1493,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.35282162, z: 1}
-  m_Center: {x: -0.0000016682935, y: 0.3235899, z: -0.000004333162}
+  m_Size: {x: 1, y: 0.34004134, z: 1}
+  m_Center: {x: -0.0000021456106, y: 0.32998022, z: -0.0000056994645}
 --- !u!23 &845675745
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2012,7 +2012,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: -45
-    max: 45
+    max: 40
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
