@@ -232,7 +232,6 @@ GameObject:
   - component: {fileID: 9596264}
   - component: {fileID: 9596263}
   - component: {fileID: 9596262}
-  - component: {fileID: 9596261}
   m_Layer: 0
   m_Name: RightPad
   m_TagString: Untagged
@@ -255,22 +254,6 @@ Transform:
   m_Father: {fileID: 1768829007}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
---- !u!54 &9596261
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9596259}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!65 &9596262
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -346,7 +329,6 @@ GameObject:
   - component: {fileID: 43875610}
   - component: {fileID: 43875609}
   - component: {fileID: 43875608}
-  - component: {fileID: 43875607}
   m_Layer: 0
   m_Name: RightBottom
   m_TagString: Untagged
@@ -369,22 +351,6 @@ Transform:
   m_Father: {fileID: 143696080}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 31.233, y: 37.33, z: 55.788}
---- !u!54 &43875607
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 43875605}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!65 &43875608
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -460,7 +426,6 @@ GameObject:
   - component: {fileID: 59673544}
   - component: {fileID: 59673543}
   - component: {fileID: 59673542}
-  - component: {fileID: 59673541}
   m_Layer: 0
   m_Name: RightSide
   m_TagString: Untagged
@@ -483,22 +448,6 @@ Transform:
   m_Father: {fileID: 143696080}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -0.847, y: -1.215, z: 44.511}
---- !u!54 &59673541
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59673539}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!65 &59673542
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -571,7 +520,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 143696080}
-  - component: {fileID: 143696079}
   m_Layer: 0
   m_Name: Walls
   m_TagString: Untagged
@@ -579,22 +527,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &143696079
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 143696078}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!4 &143696080
 Transform:
   m_ObjectHideFlags: 0
@@ -759,7 +691,6 @@ GameObject:
   - component: {fileID: 283379150}
   - component: {fileID: 283379149}
   - component: {fileID: 283379148}
-  - component: {fileID: 283379147}
   m_Layer: 0
   m_Name: TopWall
   m_TagString: Untagged
@@ -782,22 +713,6 @@ Transform:
   m_Father: {fileID: 143696080}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -45.479, y: -92.303, z: 91.37}
---- !u!54 &283379147
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 283379145}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!65 &283379148
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1067,6 +982,7 @@ GameObject:
   - component: {fileID: 658115680}
   - component: {fileID: 658115679}
   - component: {fileID: 658115678}
+  - component: {fileID: 658115682}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -1153,6 +1069,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &658115682
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658115677}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &669560580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1456,7 +1388,6 @@ GameObject:
   - component: {fileID: 845675746}
   - component: {fileID: 845675745}
   - component: {fileID: 845675744}
-  - component: {fileID: 845675743}
   m_Layer: 0
   m_Name: LeftBottom
   m_TagString: Untagged
@@ -1479,22 +1410,6 @@ Transform:
   m_Father: {fileID: 143696080}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -30.936, y: -36.823, z: 55.526}
---- !u!54 &845675743
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845675741}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!65 &845675744
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1570,7 +1485,6 @@ GameObject:
   - component: {fileID: 1073528129}
   - component: {fileID: 1073528128}
   - component: {fileID: 1073528127}
-  - component: {fileID: 1073528126}
   m_Layer: 0
   m_Name: LeftSide
   m_TagString: Untagged
@@ -1593,22 +1507,6 @@ Transform:
   m_Father: {fileID: 143696080}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -0.847, y: -1.215, z: 44.511}
---- !u!54 &1073528126
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073528124}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!65 &1073528127
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1763,7 +1661,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331913071}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.930002, y: 21.7, z: -1.8134727}
+  m_LocalPosition: {x: -5.95, y: 30.57, z: 1.05}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1895,7 +1793,6 @@ GameObject:
   - component: {fileID: 1376639083}
   - component: {fileID: 1376639082}
   - component: {fileID: 1376639081}
-  - component: {fileID: 1376639080}
   m_Layer: 0
   m_Name: LeftPad
   m_TagString: Untagged
@@ -1918,22 +1815,6 @@ Transform:
   m_Father: {fileID: 1768829007}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
---- !u!54 &1376639080
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1376639078}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!65 &1376639081
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2091,7 +1972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1699402825}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Balls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2144,9 +2025,9 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!4 &1768829007
 Transform:
@@ -2392,7 +2273,6 @@ GameObject:
   - component: {fileID: 1975139866}
   - component: {fileID: 1975139865}
   - component: {fileID: 1975139864}
-  - component: {fileID: 1975139863}
   - component: {fileID: 1975139868}
   m_Layer: 0
   m_Name: BackBoard
@@ -2401,22 +2281,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &1975139863
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1975139862}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!64 &1975139864
 MeshCollider:
   m_ObjectHideFlags: 0
