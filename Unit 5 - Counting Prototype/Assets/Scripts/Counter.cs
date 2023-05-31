@@ -10,6 +10,9 @@ public class Counter : MonoBehaviour
 
     private int Count = 0;
 
+    // Refernece to the spawnmanager to access the bool
+    public SpawnManager spawnManager;
+
     private void Start()
     {
         Count = 0;
@@ -18,6 +21,7 @@ public class Counter : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Count += 1;
-        CounterText.text = "Count : " + Count;
+        CounterText.text = "Balls Used : " + Count;
+        spawnManager.deadBall = true;
     }
 }

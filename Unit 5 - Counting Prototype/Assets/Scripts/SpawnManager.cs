@@ -10,12 +10,13 @@ public class SpawnManager : MonoBehaviour
     // Location to spawn balls from
     private Vector3 spawnPos = new Vector3 (-18, 22, -3);
 
-    private bool deadBall = true;
+    // Public so it is accessible from the box counter
+    public bool deadBall = false;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        deadBall = false;
     }
 
     void Update()

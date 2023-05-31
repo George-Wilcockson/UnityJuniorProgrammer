@@ -47,12 +47,6 @@ public class PlayerControllerX : MonoBehaviour
 
         hinge.spring = spring;
         hinge.useLimits = true;
-
-                // Move right paddle
-        if(Input.GetKey("s"))
-        {
-            Debug.Log("'s' was pressed");
-        }
-        
+       
     }
 }
