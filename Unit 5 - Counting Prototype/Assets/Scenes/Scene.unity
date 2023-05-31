@@ -378,7 +378,7 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: 45
+    min: 0
     max: 45
     bounciness: 0
     bounceMinVelocity: 0.2
@@ -1983,7 +1983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restPos: 0
   pressedPos: 45
-  paddleStrength: 100
+  paddleStrength: 1000
   paddleDamper: 150
   inputName: LPaddle
 --- !u!59 &1376639086
@@ -2012,7 +2012,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: -45
-    max: 13
+    max: 45
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
