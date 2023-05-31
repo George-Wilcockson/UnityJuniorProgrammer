@@ -22,6 +22,6 @@ public class Counter : MonoBehaviour
     {
         Count += 1;
         CounterText.text = "Balls Used : " + Count;
-        spawnManager.deadBall = true;
+        spawnManager.ballInPlay = true;
     }
 }

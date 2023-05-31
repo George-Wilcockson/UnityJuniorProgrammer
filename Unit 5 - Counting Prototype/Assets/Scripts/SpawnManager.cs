@@ -11,17 +11,19 @@ public class SpawnManager : MonoBehaviour
     private Vector3 spawnPos = new Vector3 (-18, 22, -3);
 
     // Public so it is accessible from the box counter
-    public bool deadBall = false;
+    public bool ballInPlay = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        deadBall = false;
+
     }
 
     void Update()
     {
-        if(deadBall)
+        Debug.Log("The ball is in play? " + ballInPlay);
+
+        if(!ballInPlay)
         {
             SpawnBall();
         }
@@ -35,7 +37,7 @@ public class SpawnManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(ball, spawnPos, ball.transform.rotation);
-            deadBall = false;
+            ballInPlay = true;
         }
     }
 }
