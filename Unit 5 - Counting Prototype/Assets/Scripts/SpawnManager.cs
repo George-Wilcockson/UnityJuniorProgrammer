@@ -13,20 +13,21 @@ public class SpawnManager : MonoBehaviour
     // Public so it is accessible from the box counter
     public bool ballInPlay = false;
 
-    private int ballCount = 0;
+    public int ballCount = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        ballCount = 0;
+        ballInPlay = false;
     }
 
     void Update()
     {
-        if(!ballInPlay || ballCount == 0)
+        // if the object does NOT exists and space bar pressed
+        if(GameObject.Find("Ball1(Clone)") == null && Input.GetKeyDown(KeyCode.Space))
         {
             SpawnBall();
-            ballInPlay = true;
         }
         
     }
@@ -35,12 +36,7 @@ public class SpawnManager : MonoBehaviour
     void SpawnBall()
     {
         Debug.Log("Is ball in play? " + ballInPlay + "\n how many balls? " + ballCount);
-        // If spacebar is pressed, call spwan ball, and !ballIsLive
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            Instantiate(ball, spawnPos, ball.transform.rotation);
-            Debug.Log("The ball is in play? " + ballInPlay);
-            ballCount++;
-        }
+
+        Instantiate(ball, spawnPos, ball.transform.rotation);
     }
 }
