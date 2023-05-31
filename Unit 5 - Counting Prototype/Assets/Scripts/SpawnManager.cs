@@ -9,19 +9,32 @@ public class SpawnManager : MonoBehaviour
 
     // Location to spawn balls from
     private Vector3 spawnPos = new Vector3 (-18, 22, -3);
-    
-    // For now, a startDelay until spacebar and ballIsLive bool
-    private float startDelay = 2.0f;
+
+    private bool deadBall = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("SpawnBall", startDelay);
+
+    }
+
+    void Update()
+    {
+        if(deadBall)
+        {
+            SpawnBall();
+        }
+        
     }
 
     // Update is called once per frame
     void SpawnBall()
     {
-        Instantiate(ball, spawnPos, ball.transform.rotation);
+        // If spacebar is pressed, call spwan ball, and !ballIsLive
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(ball, spawnPos, ball.transform.rotation);
+            deadBall = false;
+        }
     }
 }
