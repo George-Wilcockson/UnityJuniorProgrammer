@@ -9,8 +9,8 @@ public class PlayerControllerX : MonoBehaviour
     // Visible private field of speed to move the paddles [SerializeField]
     // Angles of paddles
     public float restPos = 0f;
-    public float pressedPos = 45f;
-    public float paddleStrength = 1000f;
+    public float pressedPos = -45f;
+    public float paddleStrength = 10000f;
     public float paddleDamper = 150f;
     HingeJoint hinge;
 
