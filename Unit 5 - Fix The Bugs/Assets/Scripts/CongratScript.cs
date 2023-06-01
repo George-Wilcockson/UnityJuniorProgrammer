@@ -33,6 +33,8 @@ public class CongratScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Text.transform.Rotate(new Vector3(rotatingSpeed, 0, 0));
+
         timeToNextText += Time.deltaTime;
 
         if (timeToNextText > 1.5f)
